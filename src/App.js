@@ -1,12 +1,15 @@
-import arrow from './assets/img/arrow.svg';
+
 import radio_filled from './assets/img/radio_filled.svg';
 import radio from './assets/img/radio.svg';
 import download from './assets/img/download.svg';
 
+import { Header, Footer, Dropdown } from './components';
 
-import { Header, Footer } from './components';
+const dayOfWeek = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
 
 function App() {
+  const date = new Date();
+  console.log(date.toString());
   return (
     <div>
       <Header />
@@ -44,16 +47,7 @@ function App() {
                   <span className="calendar__date disable">20</span>
                 </div>
               </div>
-              <div className="dropdown">
-                <div className="dropdownbtn">
-                  <span className="dropdownbtn__text">Группа</span>
-                  <img src={arrow} alt='arrow' className="dropdownbtn__ico invert" />
-                </div>
-                <ul className="dropdown-content visible">
-                  <li className="dropdown__component">ИПЗ-32</li>
-                  <li className="dropdown__component">ИПЗ-32</li>
-                </ul>
-              </div>
+              <Dropdown />
             </div>
             <div className="schedule">
               <div className="schedule__component">

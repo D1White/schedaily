@@ -243,6 +243,10 @@ main {
 .dropdown__component:first-child {
   margin-top: 0;
 }
+.dropdown__component.active{
+  color: #14142B;
+  cursor: default;
+}
 
 /* === Schedule === */
 
@@ -414,6 +418,10 @@ footer {
 
 .footer__a>span {
   font-size: 15px;
+}
+
+.footer__a>span>a {
+  padding-left: 5px;
 }
 
 .footer__contacts {
