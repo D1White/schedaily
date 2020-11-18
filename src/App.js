@@ -3,13 +3,9 @@ import radio_filled from './assets/img/radio_filled.svg';
 import radio from './assets/img/radio.svg';
 import download from './assets/img/download.svg';
 
-import { Header, Footer, Dropdown } from './components';
-
-const dayOfWeek = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+import { Header, Footer, Dropdown, Calendar } from './components';
 
 function App() {
-  const date = new Date();
-  console.log(date.toString());
   return (
     <div>
       <Header />
@@ -17,36 +13,7 @@ function App() {
         <div className="container">
           <div className="main-content">
             <div className="main__header">
-              <div className="main__calendar">
-                <div className="calendar__component">
-                  <span className="calendar__dayOfWeek">Пн</span>
-                  <span className="calendar__date">14</span>
-                </div>
-                <div className="calendar__component">
-                  <span className="calendar__dayOfWeek">Вт</span>
-                  <span className="calendar__date">15</span>
-                </div>
-                <div className="calendar__component">
-                  <span className="calendar__dayOfWeek">Ср</span>
-                  <span className="calendar__date">16</span>
-                </div>
-                <div className="calendar__component active">
-                  <span className="calendar__dayOfWeek active">Чт</span>
-                  <span className="calendar__date active">17</span>
-                </div>
-                <div className="calendar__component">
-                  <span className="calendar__dayOfWeek">Пт</span>
-                  <span className="calendar__date">18</span>
-                </div>
-                <div className="calendar__component disable">
-                  <span className="calendar__dayOfWeek disable">Сб</span>
-                  <span className="calendar__date disable">19</span>
-                </div>
-                <div className="calendar__component disable">
-                  <span className="calendar__dayOfWeek disable">Вс</span>
-                  <span className="calendar__date disable">20</span>
-                </div>
-              </div>
+              <Calendar />
               <Dropdown />
             </div>
             <div className="schedule">
