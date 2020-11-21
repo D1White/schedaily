@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from 'react-redux';
 
 import { CalendarComp } from './'
-import { setDayOfWeek } from '../redux/actions/dayOfWeek';
+import { fetchDayOfWeek } from '../redux/actions/dayOfWeek';
 
 const dayOfWeek = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
 
@@ -13,9 +13,9 @@ function Calendar() {
 
   React.useEffect(() => {
     if (todayDate.getDay() >= 6 || todayDate.getDay() === 0) {
-      dispatch(setDayOfWeek(1));
+      dispatch(fetchDayOfWeek(0));
     }else {
-      dispatch(setDayOfWeek(todayDate.getDay() - 1));
+      dispatch(fetchDayOfWeek(todayDate.getDay() - 1));
     }
   }, [])// eslint-disable-line react-hooks/exhaustive-deps
 

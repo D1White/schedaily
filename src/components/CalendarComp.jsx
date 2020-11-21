@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from 'react-redux';
 
-import { setDayOfWeek } from '../redux/actions/dayOfWeek';
+import { fetchDayOfWeek } from '../redux/actions/dayOfWeek';
 
 const dayOfWeek = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
 
@@ -15,7 +15,7 @@ function CalendarComp({ index }) {
 
   const dateClick = () => {
     if (index < 5) {
-      dispatch(setDayOfWeek(index));
+      dispatch(fetchDayOfWeek(index));
     }
   }
 

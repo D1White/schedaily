@@ -101,9 +101,14 @@ header {
   font-size: 30px;
   cursor: default;
 }
+.logo::selection {
+  color: #5F2EEA;
+  background-color: #F7F7FC;
+}
 
 .header__date {
   cursor: default;
+  text-transform: capitalize;
 }
 
 /* === Main === */
@@ -292,12 +297,13 @@ main {
   width: 4px;
   height: 180px;
   background-color: #5F2EEA;
-  margin-top: 5px;
+  margin: 5px 0 5px 0;
 }
 
 .schedule__info {
   padding: 35px 45px;
   margin-left: 100px;
+  margin-bottom: 40px;
   background-color: #FFFFFF;
   box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.15);
   cursor: default;
@@ -306,6 +312,9 @@ main {
 }
 .schedule__info.active {
   background-color: #8086FF;
+}
+.schedule__info.disable {
+  background-color: #EFF0F6;
 }
 .schedule__info:hover {
   transform: scale(1.02);
@@ -318,6 +327,9 @@ main {
 }
 .schedule__couple.active {
   color: #FCFCFC;
+}
+.schedule__couple.disable {
+  color: #6F6F6F;
 }
 
 .schedule__info__footer {
