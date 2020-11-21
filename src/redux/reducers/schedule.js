@@ -1,6 +1,7 @@
 const initialState = {
   schedule: null,
   scheduleInfo: null,
+  sheduleLink: null,
 };
 
 const schedule = (state = initialState, action) => {
@@ -14,6 +15,11 @@ const schedule = (state = initialState, action) => {
       return {
         ...state,
         scheduleInfo: action.payload,
+      };
+    case "SET_SCHEDULE_LINK":
+      return {
+        ...state,
+        sheduleLink: action.payload,
       };
     default:
       return state;

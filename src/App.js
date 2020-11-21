@@ -1,11 +1,9 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
-import download from './assets/img/download.svg';
-
 import { fetchSchedule } from './redux/actions/schedule';
 
-import { Header, Footer, Dropdown, Calendar, Schedule, LastUpdate } from './components';
+import { Header, Footer, Dropdown, Calendar, Schedule, LastUpdate, DownloadBtn } from './components';
 
 function App() {
   const dispatch = useDispatch();
@@ -26,12 +24,7 @@ function App() {
             </div>
             <Schedule />
             <LastUpdate />
-            <div className="download">
-              <button className="download-btn">
-                <span>Скачать рассписание</span>
-                <img src={download} alt="download" />
-              </button>
-            </div>
+            <DownloadBtn />
           </div>
         </div>
       </main>

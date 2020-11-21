@@ -6,3 +6,4 @@ export {default as CalendarComp} from './CalendarComp';
 export {default as Schedule} from './Schedule';
 export {default as ScheduleComponent} from './ScheduleComponent';
 export {default as LastUpdate} from './LastUpdate';
+export {default as DownloadBtn} from './DownloadBtn';
