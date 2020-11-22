@@ -2,6 +2,7 @@ const initialState = {
   schedule: null,
   scheduleInfo: null,
   sheduleLink: null,
+  isLoaded: false,
 };
 
 const schedule = (state = initialState, action) => {
@@ -10,6 +11,7 @@ const schedule = (state = initialState, action) => {
       return {
         ...state,
         schedule: action.payload,
+        isLoaded: true,
       };
     case "SET_SCHEDULE_INFO":
       return {

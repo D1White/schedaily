@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 
-import radio_filled from '../assets/img/radio_filled.svg';
-import radio from '../assets/img/radio.svg';
+import radio_filled from '../../assets/img/radio_filled.svg';
+import radio from '../../assets/img/radio.svg';
 
 const coupleStart = ['09:00', '10:30', '12:10', '13:40'];
 const coupleEnd = ['10:20', '11:50', '13:30', '15:00'];

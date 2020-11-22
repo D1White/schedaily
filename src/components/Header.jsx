@@ -6,7 +6,7 @@ function Header() {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
-    weekday: 'long',
+    weekday: 'short',
     timezone: 'UTC',
   };
 
@@ -29,7 +29,7 @@ function Header() {
     <header>
       <div className="header-container">
         <span className="logo" onClick={logoClick}>{logoText}</span>
-        <span className="header__date">{date.toLocaleString("ru", options).slice(0,18)}</span>
+        <span className="header__date">{date.toLocaleString("ru", options).slice(0,12)}</span>
       </div>
     </header>
   );

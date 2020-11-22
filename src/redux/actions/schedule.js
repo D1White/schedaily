@@ -5,6 +5,11 @@ export const setSchedule = (schedule) => ({
   payload: schedule,
 });
 
+export const setLoadedSchedule = (payload) => ({
+  type: "SET_LOADED_SCHEDULE",
+  payload,
+});
+
 export const setScheduleInfo = (scheduleInfo) => ({
   type: "SET_SCHEDULE_INFO",
   payload: scheduleInfo,
@@ -16,6 +21,8 @@ export const setScheduleLink = (sheduleLink) => ({
 });
 
 export const fetchSchedule = (dayOfWeek) => (dispatch) => {
+  dispatch(setLoadedSchedule(false));
+
   axios.get(`https://schedule-parser.herokuapp.com/ipz32`).then(({data}) => {
     // dispatch(setSchedule(data.data.schedule));
     dispatch(setScheduleInfo(data.data.info));
