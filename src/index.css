@@ -476,3 +476,325 @@ footer {
 .footer__contact:hover {
   background-color: #7075db;
 }
+
+/* ADAPTIVE */
+@media only screen and (min-width: 1215px) and (max-width: 1695px) {
+  .header-container {
+    max-width: 1170px;
+  }
+}
+
+@media only screen and (min-width: 945px) and (max-width: 1214px){
+  .container {
+    max-width: 900px;
+  }
+  .header-container {
+    max-width: 900px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 755px) and (max-width: 944px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .header-container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .main__header {
+    flex-direction: column;
+  }
+  .dropdown {
+    margin-top: 50px;
+  }
+  .schedule__info__footer {
+    flex-direction: column;
+  }
+  .schedule__teacher {
+    margin-left: 0;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen  and (min-width: 635px) and (max-width: 754px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .header-container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .main__header {
+    flex-direction: column;
+  }
+  .dropdown {
+    margin-top: 50px;
+  }
+  .schedule {
+    padding-top: 50px;
+  }
+  .schedule__info__footer {
+    flex-direction: column;
+  }
+  .schedule__teacher {
+    margin-left: 0;
+  }
+  .schedule__info {
+    margin-left: 50px;
+  }
+  .schedule__couple {
+    font-size: 30px;
+  }
+  .schedule__teacher {
+    font-size: 20px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 550px) and (max-width: 634px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .header-container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .footer-container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .main__header {
+    flex-direction: column;
+  }
+  .dropdown {
+    margin-top: 50px;
+  }
+  .schedule {
+    padding-top: 50px;
+  }
+  .schedule__info__footer {
+    flex-direction: column;
+  }
+  .schedule__teacher {
+    margin-left: 0;
+  }
+  .schedule__info {
+    margin-left: 30px;
+  }
+  .schedule__couple {
+    font-size: 30px;
+  }
+  .schedule__teacher {
+    font-size: 20px;
+  }
+  .schedule__time-start {
+    font-size: 27px;
+  }
+  .schedule__time-end {
+    font-size: 20px;
+  }
+  .timeline {
+    margin-left: 10px;
+  }
+  .lastUpdate__text {
+    font-size: 15px;
+  }
+  .footer__tagline {
+    flex-direction: column;
+  }
+  .footer__a {
+    width: 350px;
+  }
+  .footer__tagline__text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 470px) and (max-width: 549px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .header-container {
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+  }
+  .footer-container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .header__date {
+    display: none;
+  }
+  .main__header {
+    flex-direction: column;
+  }
+  .dropdown {
+    margin-top: 50px;
+  }
+  .schedule {
+    padding-top: 50px;
+  }
+  .schedule__info__footer {
+    flex-direction: column;
+  }
+  .schedule__teacher {
+    margin-left: 0;
+  }
+  .schedule__info {
+    margin-left: 30px;
+  }
+  .schedule__couple {
+    font-size: 30px;
+  }
+  .schedule__teacher {
+    font-size: 20px;
+  }
+  .schedule__time-start {
+    font-size: 27px;
+  }
+  .schedule__time-end {
+    font-size: 20px;
+  }
+  .timeline {
+    margin-left: 10px;
+  }
+  .lastUpdate__text {
+    font-size: 15px;
+  }
+  .footer__tagline {
+    flex-direction: column;
+  }
+  .footer__a {
+    width: 350px;
+  }
+  .footer__tagline__text {
+    font-size: 20px;
+  }
+  .calendar__dayOfWeek {
+    font-size: 20px;
+  }
+  .calendar__dayOfWeek.active {
+    font-size: 25px;
+  }
+  .calendar__date {
+    font-size: 20px;
+  }
+  .calendar__date.active {
+    font-size: 25px;
+  }
+  .main__calendar {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .calendar__component {
+    margin-left: 0;
+  }
+  .footer__contacts__text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 469px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .header-container {
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+  }
+  .footer-container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .header__date {
+    display: none;
+  }
+  .main__header {
+    flex-direction: column;
+  }
+  .dropdown {
+    margin-top: 50px;
+  }
+  .schedule {
+    padding-top: 50px;
+  }
+  .schedule__info__footer {
+    flex-direction: column;
+  }
+  .schedule__teacher {
+    margin-left: 0;
+  }
+  .schedule__info {
+    margin-left: 0;
+  }
+  .schedule__info__footer {
+    margin-top: 25px;
+  }
+  .schedule__couple {
+    font-size: 25px;
+  }
+  .schedule__teacher {
+    font-size: 17px;
+  }
+  .schedule__time {
+    display: none;
+  }
+  .timeline {
+    display: none;
+  }
+  .lastUpdate__text {
+    font-size: 15px;
+  }
+  .footer__tagline {
+    flex-direction: column;
+  }
+  .footer__a {
+    width: 350px;
+  }
+  .footer__tagline__text {
+    display: none;
+  }
+  .calendar__dayOfWeek {
+    font-size: 20px;
+  }
+  .calendar__dayOfWeek.active {
+    font-size: 25px;
+  }
+  .calendar__date {
+    font-size: 20px;
+  }
+  .calendar__date.active {
+    font-size: 25px;
+  }
+  .main__calendar {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .calendar__component {
+    margin-left: 0;
+  }
+  .footer__contacts__text {
+    font-size: 20px;
+  }
+  .download-btn {
+    padding: 20px 30px;
+  }
+  .download-btn>span {
+    font-size: 20px;
+  }
+  .download-btn>img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer__a>span {
+    font-size: 13px;
+  }
+}
